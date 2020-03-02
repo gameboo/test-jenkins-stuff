@@ -3,7 +3,7 @@ ansiColor('xterm') {
     def img
     stage("Clone TestRIG repository") {
       checkout([$class: 'GitSCM',
-        userRemoteConfigs: [url: 'https://github.com/gameboo/test-jenkins-stuff.git'],
+        userRemoteConfigs: [[url: 'https://github.com/gameboo/test-jenkins-stuff.git']],
         extensions: [
           [$class: 'RelativeTargetDirectory',
            relativeTargetDir: 'TheDir'],
