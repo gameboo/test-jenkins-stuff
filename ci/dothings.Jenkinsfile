@@ -12,7 +12,7 @@ ansiColor('xterm') {
            noTags: true]]])
       }
     stage("Build TestRIG builder docker image") {
-      img = docker.build("blahblah", "-f TheDir/dothings.Dockerfile .")
+      img = docker.build("blahblah", "-f TheDir/ci/dothings.Dockerfile .")
     }
   }
 }
