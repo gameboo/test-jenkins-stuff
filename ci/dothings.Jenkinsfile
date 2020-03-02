@@ -8,8 +8,7 @@ ansiColor('xterm') {
            relativeTargetDir: 'TheDir'],
           [$class: 'CloneOption',
            shallow: true,
-           noTags: true]
-        ])
+           noTags: true]]])
       }
     stage("Build TestRIG builder docker image") {
       img = docker.build("blahblah", "-f TheDir/dothings.Dockerfile .")
