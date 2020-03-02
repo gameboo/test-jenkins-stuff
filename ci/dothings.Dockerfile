@@ -1,5 +1,5 @@
 FROM ubuntu:18.04 AS testrig-builder
 
-COPY TestRIG .
+COPY TheDir .
 
-RUN ls TestRIG
+RUN ls TheDir
